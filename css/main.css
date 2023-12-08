@@ -9,7 +9,13 @@ header {
     margin:auto;
     padding: auto;
     border-radius: 10px
+    
 }
+
+
+
+
+
 footer{
     border: 4px solid rgb(0,0,0);
     margin:10px;
@@ -19,7 +25,9 @@ footer{
 h1{
     color: rgb(17, 87, 12);   
     font-variant:small-caps;
+   
 }
+
 h2{
     color: rgb(17,87,12);
     font-variant:small-caps;
@@ -29,6 +37,11 @@ footer p{
     color: red;
     float:bottom;
     clear:both;
+    
+}
+
+footer{
+    background: linear-gradient(#00ff80,#ff0080);
 }
 main{
     float:left; 
@@ -39,11 +52,13 @@ main{
     margin-top: -150px;
 }
 aside{
+   border: 4px solid rgb(0,0,0);
     float:right;
     width:32%;
     margin:5px;
     padding:5px;
     clear:both;
+    background-image:   url(images\asidebackground.jpg);
     }
     #para1{
         float: top;
@@ -84,4 +99,10 @@ li a{
 }
 a:hover{
     color: red;
+}
+
+.grid{
+display:grid;
+grid-template-columns: 200px 200px 200px;
+grid-template-rows: 300px 300px ;
 }
