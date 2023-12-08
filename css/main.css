@@ -103,6 +103,7 @@ a:hover{
 
 .grid{
     border: 4px solid black;
+    
     clear:both;
     display: grid;
     grid-template-columns: .5fr .5fr .5fr;
