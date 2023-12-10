@@ -3,6 +3,7 @@ body { width: 950px;
     margin: 10px;
     font: 15px Arial, sans-serif;
     padding: 5px;
+    background-color: antiquewhite;
     }
 header {
     border: 4px solid rgb(0,0,0);
@@ -10,21 +11,58 @@ header {
     padding: auto;
     border-radius: 10px
     
+    
+}
+.head{
+    background: linear-gradient(#0084ff, #f700ff);
+}
+nav{
+    border: 4px solid rgb(0,0,0);
+    margin: auto;
+    padding:auto;
+    border-radius: 10px;
 }
 
+.helen{
+    shape-outside: circle(50%);
+}
+section{
+    
+        display:flex;
+        flex-direction: row;
+        flex:4px;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: space-between;
+}
 
+main{
+   
+  
+    flex: 1 1 50%;
+}
+aside{
+    
+    
+    flex: 1 1 30%
+    
 
-
+}
+#para1{
+    color:black;
+}
 
 footer{
     border: 4px solid rgb(0,0,0);
     margin:10px;
     border-radius: 10px;
     clear:both;
+    background: linear-gradient(#0084ff, #f700ff);
 }
 h1{
     color: rgb(17, 87, 12);   
     font-variant:small-caps;
+    
    
 }
 
@@ -40,26 +78,10 @@ footer p{
     
 }
 
-footer{
-    background: linear-gradient(#00ff80,#ff0080);
-}
-main{
-    flex: 0 1 70%;
-    float:left; 
-    width:60%;
-    margin:10px;
-    padding:10px;
-    clear:both;
-    margin-top: -150px;
-}
-aside{
-    flex: 0 0 30%
-}
+
+
   
-    #para1{
-        float: top;
-        color: black;
-    }
+    
 
 section{
     color: rgb(17,87,12);
@@ -68,17 +90,15 @@ section{
     color:black;
     font-weight: bold;
     font-variant:small-caps;
+    shape-outside: border-box;
 }
-#img2{
-    color:black;
-    font-weight: bold;
-    font-variant:small-caps;
-}
+
 #q1{
     color:black;
 }
 #mainimg{
     border: 4px solid black;
+    shape-outside: border-box;
 }
 q{
     font-family: cursive;
