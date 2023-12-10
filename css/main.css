@@ -1,5 +1,5 @@
 /*My css sheet*/
-body { width: 950px;
+body { width: auto;    height:auto;
     margin: 10px;
     font: 15px Arial, sans-serif;
     padding: 5px;
@@ -12,20 +12,41 @@ header {
     border-radius: 10px
     
     
+    
 }
 .head{
-    background: linear-gradient(#0084ff, #f700ff);
+    background: linear-gradient(#ffee00, #88ff00);
 }
 nav{
+    display:flex;
+    flex-direction: row;
     border: 4px solid rgb(0,0,0);
+    height: 3rem;
     margin: auto;
     padding:auto;
     border-radius: 10px;
 }
 
-.helen{
-    shape-outside: circle(50%);
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding:auto;
+    margin:auto;
+
 }
+
+nav ul li a{
+    border: 2px solid rgb(17,87,12);
+    background-color: antiquewhite;
+    text-decoration: none;
+    padding: auto;
+    margin:auto;
+color: rgb(130, 0, 0);   
+
+}
+
+
+
 section{
     
         display:flex;
@@ -37,14 +58,19 @@ section{
 }
 
 main{
-   
+   flex-direction: column;
   
-    flex: 1 1 50%;
+    flex: 1 2 20%;
 }
 aside{
+    border: solid black 4px;
+    max-height: 30rem;
     
-    
-    flex: 1 1 30%
+    background: url(../images/asidebackground.jpg);
+    background-size: cover;
+    background-position: auto;
+    background-repeat: no-repeat;
+    flex: 1 1 10%
     
 
 }
@@ -53,11 +79,14 @@ aside{
 }
 
 footer{
+   display: flex;
+   flex-direction: column;
     border: 4px solid rgb(0,0,0);
-    margin:10px;
+    
+   margin-top: auto;
     border-radius: 10px;
     clear:both;
-    background: linear-gradient(#0084ff, #f700ff);
+    background: linear-gradient(#ffee00, #88ff00);
 }
 h1{
     color: rgb(17, 87, 12);   
@@ -67,12 +96,12 @@ h1{
 }
 
 h2{
-    color: rgb(17,87,12);
+    color: rgb(46, 87, 12);
     font-variant:small-caps;
 }
 footer p{
     font-size: 9px;
-    color: red;
+    color: black;
     float:bottom;
     clear:both;
     
@@ -82,7 +111,7 @@ footer p{
 
   figure{
     float:left;
-    shape-outside: inset(20%);
+    shape-outside: circle(58.34% at 114px 150px);
   }
     
 
@@ -114,54 +143,47 @@ ul li{
 }
 li a{
     text-decoration: none;
-    color:blue;
+    color: darkred;
 }
 a:hover{
-    color: red;
+    color: blue;
 }
 
-#galfig{
-    border: 4px solid black;
-}
-
-#grid{
-    border: 4px solid black;
+#galimg{
     
-   
-    display: grid;
-    grid-template-columns: .5fr .5fr .5fr;
-    grid-template-rows: .5fr .5fr;
+    
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
     
 }
 
-
-
-@media (max-width: 1200px) {
-    html{
-        font-size: 15px;
-    }
-
-
-}
-@media (max-width : 600px){
-    html{
-        font-size: 10px;
-    }
-    #gallery{
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr ;
-
-    }
+.grid{
+    border: 4px solid antiquewhite;
+     display: grid;
+    grid-template-columns: .4fr .4fr .4fr;
+    grid-template-rows: .4fr .4fr;
+    
 }
 
-form{
-    border: 4px solid grey;
 
 
-}
+
+
 
 input[type=text], input[type=email], input[type=submit], select, option{
     display: block;
     width: 50%;
     height: 2em;
 }
+
+@media all  and (max-width: 800px){
+body{
+    main{
+        font-style: italic;
+        
+    }
+}
+
+}
+
+
+
