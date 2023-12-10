@@ -34,24 +34,64 @@
         </ul>
     </aside>
     <main>
-        <section> <h2>Biography </h2>
-            <p id="para1"> <b>Helen Adams Keller</b> <i>(June 27, 1880 – June 1, 1968)</i> was an American author, disability rights advocate, political activist and lecturer. Born in West Tuscumbia, Alabama, she lost her sight and her hearing after a bout of illness when she was 19 months old. She then communicated primarily using home signs until the age of seven, when she met her first teacher and life-long companion Anne Sullivan. Sullivan taught Keller language, including reading and writing. After an education at both specialist and mainstream schools, Keller attended Radcliffe College of Harvard University and became the first deafblind person in the United States to earn a Bachelor of Arts degree.</p>
-        </section>
-        <section> <h2>Images</h2>
-            <figure>
-            
-            <img id="mainimg" src="images\yound helen.jpg" alt="">
-   <figcaption id="img1"> Young Helen</figcaption>
-        </figure>
-   <figure>
-            <img id= mainimg src ="images\old helen.jpg">
-        <figcaption id="img2">Old Helen</figcaption>
-        </figure>
-        </section>
-        <section> <h2>Quote</h2>
+        <h2> contact</h2>
+       <p> Please fill out Information bellow and we will be in touch as soon as possible.</p>
+       
+       
+        <form>
+            <div>
+                <label for="name"> Name</label>
+            <input type="text" id="name" name="name" required autofocus>
+            </div>
 
-            <q id="q1">I would rather walk with a friend in the dark, than alone in the light.</q>
-        </section>
+            <div>
+            <label for="email">Email </label>
+            <input type="email" id="email" name="email" required>
+
+            </div>
+            <div>
+                <feildset>
+                    <legend>What page is the problem on </legend>
+                    <label for="Home" > Home</label>
+                    <input type="radio" id="home" name="home" value="home" required>
+                    <label for="Gallery"> Gallery</label>
+                    <input type="radio" id="gallery" name="gallery" value="gallery" checked>
+                    <label for="Contact"> Contact</label>
+                    <input type="radio" id="contact" name="contact" value="contact">
+                    <label for="media">Media</label>
+                    <input type="radio" id="media" name="media" value="media">
+
+
+                </feildset>
+            </div>
+            <div>
+                <label for="help"> what is the problem?</label>
+                <select id="help" name="help" required>
+                   <option value="0" selected> select option</option>
+                    <option value="html"> Page not loading </option>
+                    <option value="css">Conetent not showing</option>
+                    <option value="both"> Links not working</option>
+                </select>
+            </div>
+            <div>
+                <p> if possible please give a brief description of problem.</p>
+               <label for="comment"></label>
+                <textarea id="comment" name="comment" rows="4" required> </textarea>
+
+            </div>
+            <div>
+                <label for="human"> I am Human</label>
+                <input type="checkbox" value="ture" id="human" name="human" required>
+
+            </div>
+            <div>
+                <input type="submit" value="submit" id="submit">
+            </div>
+
+
+        </form>
+        
+
     </main>
     
     <footer>
